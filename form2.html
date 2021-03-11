@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width"/>
+
+
+		<!-- Website CSS style -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style2.css">
+
+		<title>Admin</title>
+    
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+	</head>
+	<body>
+    <div class="container">
+
+	
+        <nav class="navbar navbar-fixed-top">
+    
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="RRSIMT" src="img/raj.jpg" width="100" height="90">
+      </a>
+        <label>Rajarshi Rananjay Sinh Institute Of Management & Technology</label> 
+
+  <div class="topnav" id="myTopnav" >	
+     <ul>
+          <li><a href="form2.html"> <b>Form</b></a></li>
+          <li><a href="#"><b>House</b></a>
+               <ul>
+                <li><a href="green.html">Green House</a></li>
+                <li><a href="yellow.html">Yellow House</a></li>
+                <li><a href="blue.html">Blue House</a></li>
+                <li><a href="red.html">Red House</a></li> 
+               </ul>
+          </li>
+          <li> <a href="sports.html"><b>Sports</b></a></li>
+          <li><a href="cordinator.html"><b>Cordinators</b></a></li>
+          <li><a href="about.html"> <b>About</b></a></li>
+      </ul>
+    <a href="javascript:void(0);" style=" font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+     
+            </div>
+</nav>
+		
+			
+            <div class="card card-container">
+                 <img src="img/aa.jpg" width="100%" height="150" >
+                 <img src="img/g.gif" width="200" height="200" >
+                <img src="img/g0.gif" width="250" height="200">
+                <img src="img/g1.gif" width="250" height="200" align="right">
+                    <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin">
+                <input type="text" id="inputName" class="form-control" placeholder="Complete Name" required autofocus>
+        
+                    <label class="radio-inline">
+                                 <input type="radio" id="inputCourse" name="course" checked required><font color="#fff">B.tech</font>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" id="inputCourse" name="course"   required><font color="#fff">MBA</font>
+
+                    </label>
+                <br/><br/>
+                <select name="branch"  id="inputBranch" class="form-control">
+                <option value="CSE">CSE</option>
+                <option value="ME">ME</option>
+                <option value="CE">CE</option>
+                <option value="EE">EE</option>
+                <option value="ECE">ECE</option>
+                <option value="IT">IT</option> 
+                </select>
+                <select name="sem" id="inputSemester" class="form-control">
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+                <option value="5th" id="sem1">5th</option>
+                <option value="6th" id="sem2">6th</option>
+                <option value="7th" id="sem3">7th</option>
+                <option value="8th" id="sem4">8th</option>
+                </select>
+                
+                <input type="text" name="roll_no" id="inputRoll_no" class="form-control"  placeholder="Roll No  ( 10 - digits only)" onblur="roll_nomsg();">
+               
+                <select name="color" id="inputColor" class="form-control">
+                <option value="RED">RED</option>
+                <option value="GREEN">GREEN</option>
+                <option value="BLUE">BLUE</option>
+                <option value="YELLOW">YELLOW</option>
+                </select>
+                
+          
+                    <label class="radio-inline" >
+                            <input type="radio" name="gender" value="Male"  id="inputMale"   checked><font color="#fff">Male</font>
+                    </label>
+                    <label  class="radio-inline">
+                            <input type="radio" name="gender" value="Female" id="inputFemale" ><font color="#fff">Female</font>
+                    </label>
+                <br/><br/>
+                
+                <input type="text" name="contact" placeholder="Student Contact (10 - digit no)" id="inputMobile"  class="form-control" onblur="mobilemsg();">
+        
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+ <font color="#fff">SPORTS :             
+ <input type="search" name="game1" id="inputGame1" class="form-control" placeholder="atleast one Game required" onblur="gamemsg();">   
+ <span id="game1_err" style="color:red" ></span><br/>
+ <input type="search" name="game2" id="inputGame2" class="form-control" value="Nill" ><br/>
+<span id="game2_err" style="color:red"></span>
+ <input type="search" name="game3" id="inputGame3" class="form-control" value="Nill" ><br/>
+<span id="game3_err" style="color:red"></span>
+
+
+                <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> I accept <a href="terms.html"> Terms & conditions </a>
+                    </label>
+                </div>
+                
+                                </font>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+            </form><!-- /form -->
+
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+<!--script include..........-->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="query.js"></script>
+	</body>
+</html>
